@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Root Variables*/
+
+:root {
+    --lightGray: rgb(245, 245, 245);
+    --mediumGray: rgb(177, 177, 177);
+    --darkGray: rgb(87, 87, 87);
+}
+
+nav {
+    background-color: var(--lightGray);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.menu-bar {
+    display: flex;
+    position: relative;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Left Menu vertical*/
+
+.category .material-icons {
+    font-size: 20px;
+    color: var(--darkGray);
+    align-items: center;
+    justify-content: center;
+}
+
+span .label {
+    color: var(--darkGray);
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.mains {
+    display: inline;
+}
+
+.left-vertical {
+    z-index: 400;
+    box-sizing: border-box;
+    overflow: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 0px;
+    position: fixed;
+    background-color: white;
+}
+
+.left-vertical p {
+    font-size: 10px;
+    align-items: center;
+    padding: 0 5px;
+    line-height: 10px;
+}
+
+.left-vertical p:hover {
+    font-size: 10px;
+    align-items: center;
+    padding: 0 5px;
+    line-height: 10px;
+    color: red;
+}
+
+.left-vertical .menu-item:hover {
+    background-color: var(--lightGray);
+}
+
+.left-vertical .material-icons {
+    color: var(--darkGray);
+    padding: 20px 2px;
+}
+
+.left-vertical .material-icons:hover {
+    color: var(--darkGray);
+    padding: 20px 2px;
+    color: red;
+}
+
+hr {
+    color: red;
+}
+
+
+/* Menu Bar Left*/
+
+.menu-bar .menu-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.menu-bar .menu-left img {
+    height: 35px;
+    margin-left: 80px;
+}
+
+
+/* Menu Bar Center/Search Bar*/
+
+.menu-bar a,
+.menu-bar input[type=text],
+.menu-bar .search-container button {
+    display: flex;
+    float: left;
+    display: block;
+    text-align: left;
+    padding: 5px;
+}
+
+.menu-center input[type=text] {
+    box-sizing: border-box;
+    padding: 0px;
+    height: 35px;
+    width: 550px;
+    border: 1px solid rgb(197, 197, 197);
+    margin-left: 100px;
+    font-size: 15px;
+    padding-left: 12px;
+    border-radius: 19px;
+}
+
+.menu-center button {
+    border: none;
+    padding: 5px;
+    height: 35px;
+    width: 75px;
+    background-color: var(--lightGray);
+    font-size: 15px;
+    color: var(--mediumGray);
+    border: 1px solid rgb(197, 197, 197);
+    box-sizing: border-box;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+
+/* Menu Bar Right/ Icons*/
+
+.menu-right {
+    width: 10px;
+    display: flex;
+    right: 20px;
+    margin-left: 175px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-right .material-icons {
+    color: var(--darkGray);
+    justify-content: space-around;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.menu-right .material-icons:hover {
+    color: red;
+    justify-content: space-around;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.menu-right .profile-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.divider-top {
+    border-bottom: solid 1.5px rgb(240, 240, 240);
+    margin-left: 85px;
+    margin-top: 5px;
+    margin-right: 0px;
+}
+
+.divider-bottom {
+    border-bottom: solid 1.5px rgb(109, 28, 28);
+    margin-left: 85px;
+    margin-right: 0px;
+}
+
+
+/*Trending Tab*/
+
+.trending-tab {
+    display: flex;
+    padding: 10px 10px;
+    right: 90px;
+    margin-left: 84px;
+    cursor: pointer;
+}
+
+.trending-tab p {
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px 11px;
+    background-color: var(--lightGray);
+    border: 1px solid rgb(216, 215, 215);
+    color: rgb(8, 8, 8);
+    align-items: center;
+    display: inline;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.trending-tab p:hover {
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px 11px;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(216, 215, 215);
+    color: rgb(8, 8, 8);
+    align-items: center;
+    display: inline;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+
+/* Main Body Styling*/
+
+.main-info {
+    margin-top: 100px;
+}
+
+.main-body {
+    border-top: 1px solid lightgray;
+    display: grid;
+    width: 90% vw;
+    margin-left: 74px;
+    padding: 0px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 110px;
+}
+
+.main-body-2 {
+    display: grid;
+    width: 90% vw;
+    margin-left: 74px;
+    padding: 0px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: -30px;
+}
+
+.main-body .main-info {
+    margin-top: 10px;
+    background-size: cover;
+    padding: 25px 0px;
+}
+
+.main-info .videos img {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main-info .videos video {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main-info .videos video::after {
+    content: '';
+    position: absolute;
+    border-bottom: 500px solid red;
+}
+
+.main-info .videos img:hover {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 300ms;
+    box-shadow: 0px 5px 20px rgb(151, 151, 151);
+}
+
+.main-info .videos video:hover {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 300ms;
+    box-shadow: 0px 5px 20px rgb(151, 151, 151);
+}
+
+
+/*Video Title, Info and Uploader*/
+
+.main-body .main-info h1 {
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main-body .main-info h2 {
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mediumGray);
+    cursor: pointer;
+}
+
+.main-body .main-info h3 {
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--mediumGray);
+    cursor: pointer;
+}
+
+.videos .video-info .thumbnail-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.videos .video-info .thumbnail-profile img:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    margin-right: 10px;
+    cursor: pointer;
+    transform: scale(1.095);
+    transition: 399ms;
+}
+
+.videos .video-info img:hover {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+.more-button .material-icons {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* Video Information*/
+
+.video-info {
+    padding-top: 12px;
+    display: flex;
+}
+
+.main-info {
+    position: relative;
+}
+
+.videos .video-length {
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    right: 12px;
+    top: 180px;
+    background-color: black;
+    padding: 3px 5px;
+}
+
+
+/* Verified/ not Verified Status*/
+
+.video-about .material-icons {
+    font-size: 15px;
+    color: rgb(0, 80, 228);
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.action-buttons {
+    position: absolute;
+    top: 33px;
+    right: 8px;
+}
+
+
+/* Watch later and add to que styling*/
+
+.watch-later,
+.add-to-que {
+    background-color: black;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+/* Hover buttons that appear on hover on video thumbnail*/
+
+.on-hover-buttons {
+    opacity: 1;
+}
+
+.on-hover-buttons:hover {
+    opacity: 1;
+    color: red;
+    background-color: red;
+}
+
+.main-info {
+    margin-top: 100px;
+}
+
+.main-body {
+    border-top: 1px solid lightgray;
+    display: grid;
+    width: 90% vw;
+    background-color: rgb(247, 247, 247);
+    margin-left: 74px;
+    padding: 0px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 110px;
+}
+
+.main-body-2 {
+    display: grid;
+    width: 90% vw;
+    background-color: rgb(247, 247, 247);
+    margin-left: 74px;
+    padding: 0px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: -30px;
+}
+
+.main-body .main-info {
+    margin-top: 10px;
+    background-size: cover;
+    padding: 25px 0px;
+}
+
+.main-info .videos img {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main-info .videos video {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main-info .videos img:hover {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 300ms;
+    box-shadow: 0px 5px 20px rgb(151, 151, 151);
+}
+
+.main-info-2 .videos video:hover {
+    width: 275px;
+    height: 190px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 300ms;
+    box-shadow: 0px 5px 20px rgb(151, 151, 151);
+}
+
+
+/*Video Title, Info and Uploader*/
+
+.main-body-2 .main-info h1 {
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main-body-2 .main-info h2 {
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mediumGray);
+    cursor: pointer;
+}
+
+.main-body-2 .main-info h3 {
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--mediumGray);
+    cursor: pointer;
+}
+
+.youtube-premium {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 320px;
+    width: 950PX;
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 35px 95px;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 5px 40px rgb(151, 151, 151);
+    border-radius: 12PX;
+}
+
+.youtube-premium:hover {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 320px;
+    width: 950PX;
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 35px 95px;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 5px 40px rgb(151, 151, 151);
+    border-radius: 12PX;
+    transform: scale(1.02);
+    transition: ease-in-out 500ms;
+}
+
+.youtube-premium .left {
+    vertical-align: middle;
+}
+
+.youtube-premium .left img {
+    width: 200px;
+}
+
+.youtube-premium .right img {
+    position: absolute;
+    width: 300px;
+    vertical-align: middle;
+    bottom: 0;
+}
+
+.youtube-premium h1 {
+    font-weight: 400;
+    color: RED;
+}
+
+.youtube-premium p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.youtube-premium button {
+    cursor: pointer;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: rgb(66, 133, 244);
+    outline: none;
+    border: none;
+}
+
+.youtube-premium button:hover {
+    cursor: pointer;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: rgb(41, 107, 214);
+    outline: none;
+    border: none;
+    transform: scale(1.05);
+    transition: 300ms;
+    box-shadow: 0px 5px 20px rgb(151, 151, 151);
+}
